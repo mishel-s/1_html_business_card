@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html  lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<!-- Keywords for your web page -->
+		<meta name="keywords" content="описание, мишель"/>
+		<!-- Description for your web page -->
+		<meta name="description" content="рюзюме"/>
+		<!-- Author of page content -->
+		<meta name="author" content="mishel"/>
+		<title>мишель</title>
+		
+		<style>
+		.name{
+		text-align: center;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<header>
+			<div class="name">
+				<h1>Savastru Mishel</h1>
+				<img src="photo.jpg" width="300" height="auto" alt="mishel">
+			</div>	
+		</header>
+		<nav>
+			<div>
+				<p style="font-weight: bold; margin: 0">Kiev (m.station "Pozniaki")</p>
+			</div>
+			<div>
+				<p style="font-weight: bold; margin: 0">Mobile phone: <a href="tel:+380934366454">+380934366454</a> (from 9.00 to 22.00)</p>
+			</div>
+			<div>
+				<p style="font-weight: bold; margin: 0">Email: <a href="mailto:s_mishel_s@ukr.net">s_mishel_s@ukr.net</a></p>
+			</div>
+			<div>
+				<p style="font-weight: bold; margin: 0">Profiles: <a href="https://www.facebook.com/mishel.savastru">Facebook</a> and <a href="https://gitlab.com/mishel.savastru">GitHub</a></p>
+			</div>
+		</nav>
+		<main>
+			<p>Hello!</p>
+			<p> If you want to go back, please follow this link: <a href="index.html">Back</a>!
+			<h3>
+				Write us
+			</h3>
+		
+			<form method='post' enctype='multipart/form-data' action="">
+				<table border="1">
+					<tr>
+						<td><label for="name">Name:</label></td>
+						<td><input type="text" name="name" id="name" placeholder="Enter your Name" /></td>
+					</tr>
+					<tr>
+						<td><label for="email">Email:</label></td>
+						<td><input type="email" name="email" id="email" placeholder="Enter your email" /></td>
+					</tr>
+					<tr>
+						<td><label for="phone">Your phone:</label></td>
+						<td><input type="text" name="phone" id="phone" placeholder="Enter your phone" /></td>
+					</tr>
+					<tr>
+						<td><label for="gender">Gender:</label></td>
+						<td>
+							<input type="radio" name="gender" value="Male"/>Male
+							<br><input type="radio" name="gender" value="Female"/>Female
+						</td>
+					</tr>
+					<tr>
+						<td><label for="country">Your country</label></td>
+						<td>
+							<form>
+								<select name='country[]'>
+									<option selected value="0">Choose your Country</option>
+									<option value='za'>Zimbabwe</option>
+									<option value='es'>Spain</option>
+									<option value='en'>England</option>
+									<option disabled value='ru'>Russia</option>
+								</select>
+							</form>
+						</td>
+					</tr>	
+					<tr>
+						<td><label for="Application">Your preferences:</label></td>
+						<td><input type="checkbox" name="Application" value="Football school" />Girl</td>
+						<td><input type="checkbox" name="Application" value="Football field" />Boy</td>
+						<td><input type="checkbox" name="Application" value="Shop" />Be</td>
+					</tr>
+					<tr>
+						<td>Update your summary:</td>
+						<td><input type='file' name='file'></td>
+					</tr>
+					<tr>
+						<td colspan='2' align='center'><label for="massage">Massage:</label>
+						<br><textarea name="massage" id="massage" placeholder="Enter your massage" ></textarea></td>
+					</tr>
+					<tr>
+						<td colspan='2' align='center'><input type="submit" value="Send" /></td>
+					</tr>
+				</table>
+				<input type="hidden" name="page" value="services">
+			</form>
+		</main>
+		<footer>
+		<div>
+			<p>Have a Good Mood</p>
+		</div>
+		</footer>
+	</body>
+</html>
